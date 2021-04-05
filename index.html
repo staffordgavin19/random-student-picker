@@ -15,22 +15,30 @@
     <title>Random Student Picker</title>
   </head>
   <body>
-    <!-- TODO: Update 'h1' -->
-    <h1>Random Student Picker</h1>
+    <h1 class="text-center">Random Student Picker</h1>
 
-    <form>
-      <div>
-        <label for="fname"></label>
-        <input type="text" id="fname" />
+    <form class="flex flex--column">
+      <div class="flex">
+        <div>
+          <label for="fname" class="screen-reader-text">First Name</label
+          ><input
+            placeholder="First Name"
+            type="text"
+            id="fname"
+            name="fname"
+          />
+        </div>
+
+        <div>
+          <label for="lname" class="screen-reader-text">Last Name</label
+          ><input placeholder="Last Name" type="text" id="lname" name="lname" />
+        </div>
       </div>
-      <button type="submit">Add Student</button>
+      <button type="submit" class="button">Add Student!</button>
+      <button type="reset" class="button button--reset">Reset!</button>
     </form>
-    <form>
-      <div>
-        <label for="lname"></label>
-        <input type="text" id="lname" />
-      </div>
-    </form>
+
+    <button class="button">Pick a student!</button>
 
     <script src="./scripts.js" type="module"></script>
   </body>
