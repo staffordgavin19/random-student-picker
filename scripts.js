@@ -16,5 +16,5 @@ form.addEventListener("submit", (event) => {
 });
 
 document.querySelector("button").addEventListener("click", () => {
-  console.log("hello");
+  console.log(students[getRandomIntInclusive(0, students.length - 1)]);
 });
