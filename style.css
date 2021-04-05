@@ -53,5 +53,8 @@ form {
 .screen-reader-text {
   left: -9999px;
   position: absolute;
-  top: -9999px;
+}
+
+.mt-medium {
+  margin-top: var(--medium-gap);
 }
