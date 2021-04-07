@@ -23,38 +23,59 @@ form {
   padding: 8px;
 }
 
-/* The `--` conveys that this is a modifier class intended for use with `.button` */
-.button--reset {
-  background-color: rosybrown;
+.button--jumbo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 10vh;
+  text-transform: uppercase;
+  transition: all 0.25s;
+  width: 40vw;
 }
 
-.flex {
-  display: flex;
-  gap: var(--medium-gap);
-}
+.button--jumbo:hover,
+.button--jumbo:focus {
+  border-radius: 32px;
 
-.flex--align-center {
-  align-items: center;
-}
+  /* The `--` conveys that this is a modifier class intended for use with `.button` */
+  .button--reset {
+    background-color: rosybrown;
+  }
 
-.flex--column {
-  flex-direction: column;
-}
+  .flex {
+    display: flex;
+    gap: var(--medium-gap);
+  }
 
-.flex--justify-center {
-  justify-content: center;
-}
+  .flex--align-center {
+    align-items: center;
+  }
 
-.text-center {
-  text-align: center;
-}
+  .flex--column {
+    flex-direction: column;
+  }
 
-/* CSS Tricks */
-.screen-reader-text {
-  left: -9999px;
-  position: absolute;
-}
+  .flex--justify-center {
+    justify-content: center;
+  }
 
-.mt-medium {
-  margin-top: var(--medium-gap);
+  .text-center {
+    text-align: center;
+  }
+
+  /* CSS Tricks */
+  .screen-reader-text {
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+  }
+
+  .mt-medium {
+    margin-top: var(--medium-gap);
+  }
+
+  @media screen and (min-width: 600px) {
+    :root {
+      --small-gap: 40px;
+    }
+  }
 }
